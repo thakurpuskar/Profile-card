@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #8d2f35, #2e38b9);
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    background: rgba(4, 236, 236, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(225, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+}
+
+.profile .avatar{
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(47, 46, 47, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile .avatar:hover{
+    transform: scale(1.1);
+}
+
+.profile h2{
+    font-size: 1.7em;
+    color: #4a0a8f;
+    margin-bottom: 10px;
+    text-shadow: 0 2p 5px rgba(0,0,0,0.2);
+}
+
+.profile h3{
+    font-size: 1em;
+    color: rgba(11, 1, 1, 0.8);
+    margin-bottom: 20px;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba(225, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(225, 255, 255, 0.2);
+    gap: 20px;
+}
+
+.stats div{
+    text-align: center;
+}
+
+.stats span{
+    font-size: 0.9em;
+    color: rgba(14, 13, 13, 0.8);
+}
+
+.stats h4{
+    font-size: 1.4em;
+    color: #100303;
+    margin-bottom: 5px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.social a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(225, 255, 255, 0.2);
+    color: #070101;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social a:hover{
+    background: rgba(225, 255, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.connect-btn{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 30px;
+    color: #4a0a8f;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.connect-btn:hover{
+    background: rgba(103, 109, 111, 0.3);
+    transform: scale(1.1);
+}
