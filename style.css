@@ -39,7 +39,15 @@ body {
     0 0 200px #01c4fa;
 }
 
-.profile .avatar {
+.card .pic{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card .pic .profile{
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -47,56 +55,73 @@ body {
   margin-bottom: 20px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* .profile .avatar{
-    position: fixed;
-    top: 0; left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: none;
-} */
-
-/* .profile .a span{
-    position: absolute;
-    top: 0; right: 10px;
-    font-size: 60px;
-    font-weight: 60px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
+.card .pic .profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .2s linear;
 }
 
-.profile .popup-image img{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #fff;
-    border-radius: 5px;
-    width: 750px;
-    object-fit: cover;
+.card .pic .profile:hover img{
+  transform: scale(1.1);
+}
+
+.popup-image{
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .popup-image{
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.card .popup-image span{
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.card .popup-image img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
 }
 
 @media(max-width:768px){
-    .popup-image img{
+  .card .popup-image img{
         width: 95%;
     }
-} */
+} 
 
-.profile .avatar:hover{
-    transform: scale(1.08);
-}
-
-.profile h2 {
+.text h2 {
   font-size: 1.em;
   color: #d1d0d2;
   margin-bottom: 10px;
   text-shadow: 0 2p 5px rgba(0, 0, 0, 0.2);
 }
 
-.profile h3 {
+.text h3 {
   font-size: 1em;
   color: rgba(137, 133, 136, 0.8);
   margin-bottom: 20px;
