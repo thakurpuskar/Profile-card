@@ -70,50 +70,6 @@ body {
   transform: scale(1.1);
 }
 
-.popup-image{
-  height: 10px;
-  width: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card .popup-image{
-  position: fixed;
-  top: 0; left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  display: none;
-}
-
-.card .popup-image span{
-  position: absolute;
-  top: 0; right: 10px;
-  font-size: 60px;
-  font-weight: bolder;
-  color: #fff;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.card .popup-image img{
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-  border-radius: 5px;
-  width: 750px;
-  object-fit: cover;
-}
-
-@media(max-width:768px){
-  .card .popup-image img{
-        width: 95%;
-    }
-} 
-
 .text h2 {
   font-size: 1.em;
   color: #d1d0d2;
