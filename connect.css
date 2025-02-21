@@ -30,7 +30,7 @@
         .text {
             max-width: 800px;
             padding: 20px;
-            background: rgb(154, 153, 153);
+            background: rgba(4, 236, 236, 0.1);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: 50px 20px;
