@@ -1,110 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
 
-*{
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body{
-    min-height: 100vh;
-    background: linear-gradient(45deg, #8d2f35, #2e38b9);
-}
+        body {
+            min-height: 100vh;
+            background: linear-gradient(45deg, #8d2f35, #2e38b9);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-.back{
-    font-size: 1.5rem;
-    color: #313131;
-    cursor: pointer;
-    padding: 12px;
-    background: rgba(64, 2, 250, 0.4);
-  }
+        .back {
+            font-size: 1.5rem;
+            color: #313131;
+            cursor: pointer;
+            padding: 12px;
+            background: rgba(64, 2, 250, 0.4);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
 
-.text{
-    padding: 20px;
-}
+        .text {
+            max-width: 800px;
+            padding: 20px;
+            background: rgb(154, 153, 153);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 50px 20px;
+        }
 
-.social {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 20px;
-  }
-  
-  .social a {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(2, 246, 246, 0.2);
-    color: #080000;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .social a:hover {
-    background: rgba(225, 255, 255, 0.4);
-    transform: translateY(-5px);
-  }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+        }
 
-  h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+        .social a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(2, 246, 246, 0.2);
+            color: #080000;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-  h4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+        .social a:hover {
+            background: rgba(225, 255, 255, 0.4);
+            transform: translateY(-5px);
+        }
 
-  h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-  }
+        h1, h2, h3, h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-  h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+        h2 {
+            font-size: 40px;
+        }
 
-  .icon {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .icon a {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(2, 246, 246, 0.2);
-    color: #080000;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .icon a:hover {
-    background: rgba(225, 255, 255, 0.4);
-    transform: translateY(-5px);
-  }
+        .icon {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
 
-  p{
-    font-size: 20px;
-  }
-  
-  a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #313131;
-  }
+        .icon a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(2, 246, 246, 0.2);
+            color: #080000;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .icon a:hover {
+            background: rgba(225, 255, 255, 0.4);
+            transform: translateY(-5px);
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #313131;
+        }
+
+        @media (max-width: 600px) {
+            .text {
+                width: 90%;
+                padding: 15px;
+            }
+            .icon a, .social a {
+                font-size: 24px;
+            }
+        }
