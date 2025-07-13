@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./connect.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connect - Puskar Kumar Thakur</title>
+  <link rel="icon" href="./profile.jpg" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
 </head>
-<body>
-    <div class="back">
-        <a href="./index.html">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
+
+<body class="bg-gradient-to-br from-gray-100 via-purple-200 to-gray-300 dark:from-gray-900 dark:via-purple-900 dark:to-gray-800 flex items-center justify-center min-h-screen font-sans transition-colors duration-500">
+
+  <!-- 🌙 Dark Mode Toggle -->
+  <button id="darkModeToggle" aria-label="Toggle Dark Mode"
+    class="fixed top-5 right-5 z-50 p-3 rounded-full bg-white/80 dark:bg-gray-700 dark:text-white shadow-lg hover:bg-purple-400 transition"
+    title="Toggle dark mode">
+    <i class="fa-solid fa-moon text-purple-900 dark:text-yellow-400"></i>
+  </button>
+
+  <!-- 🔙 Back Button -->
+  <a href="./index.html"
+    class="fixed top-5 left-5 z-50 p-3 rounded-full bg-white/80 dark:bg-gray-700 dark:text-white shadow-lg hover:bg-purple-400 transition flex items-center justify-center"
+    aria-label="Back to Portfolio" title="Back to Portfolio">
+    <i class="fa-solid fa-arrow-left text-purple-900 dark:text-yellow-400"></i>
+  </a>
+
+  <!-- 📇 Main Content -->
+  <main class="max-w-3xl bg-white/30 dark:bg-gray-800/70 backdrop-blur-lg rounded-xl border border-purple-300 dark:border-purple-600 shadow-xl p-10 mx-4 transition-colors duration-500">
+
+    <h1 class="text-3xl font-bold mb-6 text-purple-700 dark:text-purple-300 text-center">👋 Hello, I'm Puskar Kumar Thakur.</h1>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 text-center">
+      I'm a Student with a passion for IT. I love exploring new technologies and working on innovative projects that make an impact. 🚀
+    </p>
+
+    <h2 class="text-4xl font-semibold mb-6 text-purple-600 dark:text-purple-400 text-center">🛠️ Skills</h2>
+
+    <div class="icon flex justify-center gap-6 mb-10">
+      <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="w-16 h-16 bg-purple-500 hover:bg-purple-600 text-white text-3xl rounded-full flex items-center justify-center transition-transform hover:scale-110"><i class="fa-brands fa-html5"></i></a>
+      <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="w-16 h-16 bg-purple-500 hover:bg-purple-600 text-white text-3xl rounded-full flex items-center justify-center transition-transform hover:scale-110"><i class="fa-brands fa-css3-alt"></i></a>
+      <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="w-16 h-16 bg-purple-500 hover:bg-purple-600 text-white text-3xl rounded-full flex items-center justify-center transition-transform hover:scale-110"><i class="fa-brands fa-js"></i></a>
+      <a href="https://en.wikipedia.org/wiki/Flutter_(software)" target="_blank" class="w-16 h-16 bg-purple-500 hover:bg-purple-600 text-white text-3xl rounded-full flex items-center justify-center transition-transform hover:scale-110"><i class="fa-brands fa-flutter"></i></a>
+      <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank" class="w-16 h-16 bg-purple-500 hover:bg-purple-600 text-white text-3xl rounded-full flex items-center justify-center transition-transform hover:scale-110"><i class="fa-brands fa-dart-lang"></i></a>
     </div>
-    <div class="text">
-        <h1>👋 Hello, I'm Puskar Kumar Thakur.</h1>
-        <p>I'm a Student with a passion for IT. I love exploring new technologies and working on innovative projects that make an impact. 🚀</p>
-        
-        <h2>🛠️ Skills</h2>
-        <div class="icon">
-            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><i class="fa-brands fa-css3-alt"></i></a>
-            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><i class="fa-brands fa-js"></i></a>
-            <a href="https://en.wikipedia.org/wiki/Flutter_(software)" target="_blank"><i class="fa-brands fa-flutter"></i></a>
-            <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank"><i class="fa-brands fa-dart-lang"></i></a>
-        </div>
-        
-        <h3>✅ "Every expert was once a beginner."</h3>
-        
-        <h2>🔥 Projects</h2>
-        <p>Here are some cool projects I've worked on:</p>
-        <p><a href="https://cctthakur.vercel.app/" target="_blank">[Coder's Hustle 1.0 Myself]</a> – A website for my college.</p>
-        <p><a href="https://github.com/thakurpuskar/Animated-Login-Page" target="_blank">[Animated Login Page]</a> – Inspired by a tutorial, but customized with my own enhancements.</p>
-        
-        <h1>📫 Let's Connect!</h1>
-        <div class="social">
-            <a href="mailto:puskarkumarthakur14@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.messenger.com/t/8842214302536431/" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
-            <a href="tel:+9779767715499"><i class="fa-solid fa-phone"></i></a>
-            <a href="https://t.me/+9779767715499" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://wa.me/+9779767715499" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
+
+    <h3 class="text-xl italic font-semibold text-purple-700 dark:text-purple-300 mb-8 text-center">✅ "Every expert was once a beginner."</h3>
+
+    <h2 class="text-4xl font-semibold mb-4 text-purple-600 dark:text-purple-400 text-center">🔥 Projects</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6 text-center">Here are some cool projects I've worked on:</p>
+    <p class="mb-2 text-center">
+      <a href="https://cctthakur.vercel.app/" target="_blank" class="text-purple-600 hover:underline font-semibold">[Coder's Hustle 1.0 Myself]</a> – A website for my college.
+    </p>
+    <p class="text-center">
+      <a href="https://github.com/thakurpuskar/Animated-Login-Page" target="_blank" class="text-purple-600 hover:underline font-semibold">[Animated Login Page]</a> – Inspired by a tutorial, but customized with my own enhancements.
+    </p>
+
+    <h1 class="text-3xl font-bold mt-12 mb-6 text-purple-700 dark:text-purple-300 text-center">📫 Let's Connect!</h1>
+
+    <div class="social flex justify-center gap-6 text-white">
+      <a href="mailto:puskarkumarthakur14@gmail.com" class="bg-red-500 hover:bg-red-600 w-14 h-14 flex items-center justify-center rounded-full transition-transform hover:scale-110 text-2xl"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.messenger.com/t/8842214302536431/" target="_blank" class="bg-purple-600 hover:bg-purple-700 w-14 h-14 flex items-center justify-center rounded-full transition-transform hover:scale-110 text-2xl"><i class="fa-brands fa-facebook-messenger"></i></a>
+      <a href="tel:+9779767715499" class="bg-green-600 hover:bg-green-700 w-14 h-14 flex items-center justify-center rounded-full transition-transform hover:scale-110 text-2xl"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://t.me/+9779767715499" target="_blank" class="bg-blue-500 hover:bg-blue-600 w-14 h-14 flex items-center justify-center rounded-full transition-transform hover:scale-110 text-2xl"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://wa.me/+9779767715499" target="_blank" class="bg-green-500 hover:bg-green-600 w-14 h-14 flex items-center justify-center rounded-full transition-transform hover:scale-110 text-2xl"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
+  </main>
+
+  <!-- 🌓 Theme Toggle Logic -->
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    const htmlElement = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlElement.classList.add('dark');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      htmlElement.classList.toggle('dark');
+      localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
 </body>
+
 </html>
